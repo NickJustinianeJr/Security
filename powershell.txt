@@ -1,0 +1,141 @@
+
+
+
+Invoke-WindowsApi "kernel32" ([bool]) "DebugActiveProcess" 
+@([int]) @(1840)
+
+
+
+
+
+
+Enable-Privilege -Privilege SeIncreaseQuotaPrivilege
+
+
+
+Unable to find type [Privileges[]]: make sure that the assembly containing this type is loaded.
+At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\PoshPrivilege\Scripts\Get-Privilege.ps1:101 char:23
++         [Privileges[]] <<<< $Privilege,
+    + CategoryInfo          : InvalidOperation: (Privileges[]:String) [], RuntimeException
+    + FullyQualifiedErrorId : TypeNotFound
+
+
+
+
+
+
+NTRIGHTS +r Right -u "NickMJustiniane\Nick M. Justiniane J" SeDebugPrivilege
+
+NTRIGHTS +r Right -u "NickMJustiniane\Nick M. Justiniane J" SeIncreaseWorkingSetPrivilege
+SeDebugPrivilege
+
+
+Add-Type -Path 'C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll'
+
+
+C:\Windows\Microsoft.NET\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089
+
+
+
+S-1-5-21-1711611907-3927323661-3093706059
+
+
+
+
+0x80070514
+
+
+
+psexec.exe -i -s powershell.exe
+
+psexec.exe -i -u "NT AUTHORITY\LOCAL SERVICE" powershell.exe
+
+psexec.exe -i -u "NT AUTHORITY\NETWORK SERVICE" powershell.exe
+
+psexec.exe -i -u "BaiPingz-PC\BaiPingz" powershell.exe
+
+psexec.exe -i -s "D:\Downloads\ProcessExplorer\procexp.exe"
+
+psexec.exe -i -s "C:\Program Files\Process Hacker 2\ProcessHacker.exe"
+
+
+start-process powershell .\ResumePowershell.ps1
+
+start-process powershell .\ResumePowershell.ps1
+
+start-process powershell .\ResumePowershell.ps1
+
+start-process powershell .\ResumePSSUSPEND.ps1
+
+start-process powershell .\ResumePSEXESVC.ps1
+
+start-process powershell .\ResumeChrome.ps1
+
+start-process powershell .\ResumeExplorer.ps1
+
+start-process powershell .\ResumeCMD.ps1
+
+start-process powershell .\ResumeNotepad++.ps1
+
+start-process powershell .\ResumeNotepad.ps1
+
+start-process powershell .\ResumeWinLogon.ps1
+
+start-process powershell .\ResumeCSRSS.ps1
+
+start-process powershell .\ResumeConhost.ps1
+
+start-process powershell .\ResumeLSASS.ps1
+
+start-process powershell .\ResumeLSM.ps1
+
+start-process powershell .\ResumeServices.ps1
+
+start-process powershell .\ResumeSVCHOST.ps1
+
+start-process powershell .\ResumeSMSS.ps1
+
+start-process powershell .\ResumeDWM.ps1
+
+start-process powershell .\ResumeWininit.ps1
+
+start-process powershell .\ResumeOtherProcesses.ps1
+
+start-process powershell .\ResetMinimumWorkingSet.ps1
+
+Get-Service | Where-Object {$_.Status -eq "Paused"} | Resume-Service
+
+Get-Service | Resume-Service
+
+
+
+
+
+procgov -maxmem 2000M -p 420
+
+
+1821000000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
